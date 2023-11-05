@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { TaskCard } from "./TaskCard"
 import { BoxCard } from "./BoxCard";
+import './TaskList.css'
 
 export const TaskList = ({info}) => {
      const [tasks, setTasks] = useState([
@@ -15,7 +16,7 @@ export const TaskList = ({info}) => {
   }
 
   return (
-    <>
+    <div className="tasklist">
       <h1>Task List</h1>
       <ul>
         <button
@@ -42,6 +43,6 @@ export const TaskList = ({info}) => {
         <p className="description">Lorem ipsum dolor sit </p>
         <p className="title">Lorem ipsum dolor sit amet </p>
       </BoxCard>
-    </>
+    </div>
   );
 };

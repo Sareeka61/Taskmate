@@ -1,5 +1,8 @@
+import "./TaskCard.css"
+
 export const TaskCard = ({ task, handleDelete, info }) => {
     return (
+      <div className="taskcard ">
         <li
               className={task.completed ? "completed" : "incompleted"}
             >
@@ -10,5 +13,6 @@ export const TaskCard = ({ task, handleDelete, info }) => {
                 Delete
               </button>
             </li>
+            </div>
     )
 }
